@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id="container"></div>
+
+  <script type="text/babel">
+      const name = "Rubén Arias";
+      const element = <h1>Hola {name}</h1>;
+
+      ReactDOM.render(
+          element,
+          document.getElementById('container')
+      );
+  </script>
+</body>
+</html>

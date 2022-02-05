@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+<div id="root"></div>
+
+
+<script type="text/babel">
+    const root = document.getElementById('root');
+
+    class Encabezado extends React.Component {
+        render() {
+            return <header>{this.props.name}</header>
+        }
+    }
+
+    class Seccion extends React.Component {
+        render() {
+            return <header>{this.props.name}</header>
+        }
+    }
+
+    class Pie extends React.Component {
+        render() {
+            return <header>{this.props.name}</header>
+        }
+    }
+
+    function App() {
+        return(
+            <div>
+                <Encabezado name="Encabezado"/>
+                <Seccion name="Pagina central"/>
+                <Pie name="Pie de pagina"/>
+            </div>
+        );
+    }
+
+    ReactDOM.render(
+        <App/>,
+        root
+    );
+</script>
+</body>
+</html>
