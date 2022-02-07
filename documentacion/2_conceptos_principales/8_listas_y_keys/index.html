@@ -12,17 +12,19 @@
 <body>
 <div id="root"></div>
 
-
 <script type="text/babel">
-    const element = document.getElementById('root')
+    const element = document.getElementById('root');
+
     const numbers = [1, 2, 3, 4, 5];
 
-    const listItem = numbers.map((number) =>
+    const listNumbers = numbers.map((number) =>
         <li>{number}</li>
     );
 
     ReactDOM.render(
-        <ul>{listItem}</ul>,
+        <ul>
+            {listNumbers}
+        </ul>,
         element
     );
 </script>

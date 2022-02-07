@@ -10,29 +10,17 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body>
+<div>
+    <select>
+        <option value="grapefruit">Grapefruit</option>
+        <option value="lime">Lime</option>
+        <option selected value="coconut">Coconut</option>
+        <option value="mango">Mango</option>
+    </select>
+</div>
 <div id="root"></div>
 
 <script type="text/babel">
-    const element = document.getElementById('root');
-
-    const numbers = [1, 2, 3, 4, 5];
-
-    function NumbersList(props) {
-        const numbers = props.numbers;
-
-        const list = numbers.map((number) =>
-            <li>{number}</li>
-        )
-
-        return (
-            <ul>{list}</ul>
-        );
-    }
-
-    ReactDOM.render(
-        <NumbersList numbers={numbers}/>,
-        element
-    );
 </script>
 </body>
 </html>
